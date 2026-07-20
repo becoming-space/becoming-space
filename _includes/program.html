@@ -1,0 +1,53 @@
+<!-- PROGRAM / STACK -->
+<section class="section program" id="program">
+  <div class="wrap">
+    <div class="shead center-title">
+      <p class="kicker">Arhitectura succesului tău</p>
+      <h2>Sistemul "Becoming Space"</h2>
+      <p class="lead">O metodologie riguroasă, rafinată prin ani de practică în recrutare</p>
+      <p class="lead"><strong>Transformă felul în care ești perceput pe piața muncii.</strong></p>
+    </div>
+    <div class="stack">
+      {% for mod in site.data.modules %}
+      <div class="mod{% if mod.star %} star{% endif %}">
+        {% if mod.star %}<span class="star-tag">{{ mod.star_tag }}</span>{% endif %}
+        <span class="num">{{ mod.num }}</span>
+        <div>
+          <h4>{{ mod.title }}</h4>
+          <p>{{ mod.desc }}</p><span class="val">{{ mod.value }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 class="bonus-head"><span class="hc-icon" style="width:30px;height:30px;border-radius:9px">+</span> Bonusuri
+      incluse</h3>
+    <div class="bonus-grid">
+      {% for bonus in site.data.bonuses %}
+      <div class="bonus"><span class="plus">+</span>
+        <div><b>{{ bonus.title }}</b>
+          <p>{{ bonus.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="value-bar">
+      <span class="vt">Valoare totală</span>
+      <span class="nums"><span class="new">1.499 RON</span></span>
+    </div>
+
+    <div class="guarantee">
+      <span class="gi" aria-hidden="true">✓</span>
+      <div>
+        <p class="kicker" style="margin-bottom:.3rem">Fără risc pentru tine</p>
+        <h3>Garanția Interviului</h3>
+        <p>Dacă parcurgi pașii din sistem și nu primești cel puțin 3 invitații la interviu în 90 de zile,</p>
+        <p class="bold">continuăm
+          să lucrăm împreună gratuit până le primești.</p>
+        <p>În plus: dacă după prima ședință simți că nu e pentru tine, îți returnez integral banii. Fără întrebări.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<!-- TESTIMONIALS -->
+<section class="section" id="rezultate" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="shead center-title">
+      <p class="kicker">Ce spun oamenii cu care am lucrat</p>
+      <h2>Aceiași oameni. Alt rezultat.</h2>
+    </div>
+    <div class="tgrid">
+      {% for t in site.data.testimonials %}
+      <div class="tcard">
+        <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
+        <p>{{ t.quote }}</p>
+        <div class="tperson">
+          <span class="tav">
+            {% if t.image != "" %}
+              {% if t.link != "" %}<a href="{{ t.link }}">{% endif %}
+              <img src="{{ t.image | relative_url }}" alt="{{ t.name }}" style="width:100%;height:100%;object-fit:cover;border-radius:50px;">
+              {% if t.link != "" %}</a>{% endif %}
+            {% else %}
+              {{ t.initials }}
+            {% endif %}
+          </span>
+          <span>
+            <b>{% if t.link != "" %}<a href="{{ t.link }}">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</b>
+            <span>{% if t.link != "" %}<a href="{{ t.link }}">{{ t.role }}</a>{% else %}{{ t.role }}{% endif %}</span>
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

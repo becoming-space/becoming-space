@@ -1,0 +1,17 @@
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="shead" style="margin:0 auto;text-align:center">
+      <p class="kicker">Întrebări frecvente</p>
+      <h2>Ce e bine să știi</h2>
+    </div>
+    <div class="faq">
+      {% for item in site.data.faq %}
+      <details>
+        <summary>{{ item.question }} <span class="chev">+</span></summary>
+        <p>{{ item.answer }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

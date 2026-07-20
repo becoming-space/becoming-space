@@ -1,0 +1,30 @@
+- name: "Sesiune Strategică 1 la 1"
+  price: "250 RON"
+  price_note: ""
+  desc: "Analiză intensivă a profilului tău profesional și identificarea blocajelor imediate."
+  featured: false
+  btn_style: "btn-ghost"
+  btn_text: "Rezervă sesiunea"
+  wa_message: "Bună,%20Andreea!%20Te%20contactez%20de%20pe%20site-ul%20Becoming%20Space%20pentru%20sedinta%201%20la%201."
+  features:
+    - "50 de minute de consultanță 1 la 1"
+    - "Audit detaliat al CV-ului și LinkedIn-ului"
+    - "5 zile de ghidare pe WhatsApp după sesiune"
+    - "Creditare sumă în programul complet"
+
+- name: "Becoming Space"
+  price: "1.499 RON"
+  price_note: "/ sau 3 rate a 500 RON"
+  desc: "Transformarea completă a prezenței tale în piața muncii. Sistemul de la A la Z."
+  featured: true
+  tag: "Recomandat"
+  btn_style: "btn-primary"
+  btn_text: "Aplică pentru transformare"
+  btn_arrow: true
+  wa_message: "Bună,%20Andreea!%20Te%20contactez%20de%20pe%20site-ul%20Becoming%20Space%20pentru%20pachetul%20de%20servicii."
+  features:
+    - "Ghidare 1 la 1 pe tot parcursul"
+    - "CV și LinkedIn construite pentru angajator"
+    - "Pregătire de interviu fără emoții care te blochează"
+    - "5 zile de suport pe WhatsApp după fiecare etapă"
+    - "Garanția de Performanță inclusă"

@@ -1,0 +1,28 @@
+<!-- PRICING -->
+<section class="section" id="preturi">
+  <div class="wrap">
+    <div class="shead center-title">
+      <p class="kicker">Cum lucrăm împreună</p>
+      <h2>Alege punctul de pornire potrivit pentru tine.</h2>
+    </div>
+    <div class="tiers">
+      {% for tier in site.data.pricing %}
+      <div class="tier{% if tier.featured %} featured{% endif %}">
+        {% if tier.tag %}<span class="tier-tag">{{ tier.tag }}</span>{% endif %}
+        <h3>{{ tier.name }}</h3>
+        <div class="price">{{ tier.price }}{% if tier.price_note != "" %} <small>{{ tier.price_note }}</small>{% endif %}</div>
+        <p class="desc">{{ tier.desc }}</p>
+        <ul>
+          {% for feature in tier.features %}
+          <li><span class="ck">✓</span>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <a class="btn {{ tier.btn_style }}" target="_blank"
+          href="https://wa.me/{{ site.whatsapp_number }}?text={{ tier.wa_message }}">{{ tier.btn_text }}{% if tier.btn_arrow %} <span class="arrow">→</span>{% endif %}</a>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="scarcity"><span class="dot"></span>Accept un număr limitat de clienți lunar pentru a asigura calitatea
+      și atenția necesară fiecărei cariere.</p>
+  </div>
+</section>

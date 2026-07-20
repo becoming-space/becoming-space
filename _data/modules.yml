@@ -1,0 +1,36 @@
+- num: "1"
+  title: "Busola de Carieră"
+  desc: "Sesiune 1:1 de poziționare: ce rol țintești, cum te diferențiezi, care e mesajul tău."
+  value: "Valoare 199 RON"
+  star: false
+
+- num: "2"
+  title: "CV-ul care Trece de Filtre"
+  desc: "Rescriere alături de cineva care a respins mii de CV-uri. Trece de sistemele de screening automat și de scanarea umană de 6 secunde."
+  value: "Valoare 300 RON"
+  star: false
+
+- num: "3"
+  title: "Profil LinkedIn de Autoritate"
+  desc: "Îți optimizăm profilul ca recrutorii să vină ei la tine."
+  value: "Valoare 200 RON"
+  star: false
+
+- num: "4"
+  title: "Harta Joburilor Ascunse"
+  desc: "Strategia de căutare, abordarea prin mesaj direct și cum obții recomandări, fără să te pierzi printre 200 de aplicanți."
+  value: "Valoare 200 RON"
+  star: false
+
+- num: "★"
+  title: "Interviul pe care îl Câștigi"
+  desc: "Pregătire din scaunul intervievatorului: întrebările reale, ce evaluează ei de fapt, simulare de interviu + feedback."
+  value: "Valoare 350 RON"
+  star: true
+  star_tag: "Elementul-cheie"
+
+- num: "6"
+  title: "Negocierea Ofertei"
+  desc: "Cum urci salariul fără să pierzi oferta. Vei învăța din perspectiva celui care făcea ofertele."
+  value: "Valoare 250 RON"
+  star: false

@@ -1,0 +1,24 @@
+title: "Becoming Space • Treci de la \"aplic și aștept\" la \"aleg dintre oferte\""
+description: "Pregătire de carieră, CV și interviu de la cineva care a stat de cealaltă parte a mesei: 7+ ani în recrutare, sute de interviuri conduse. Online, fără judecată."
+url: ""
+baseurl: ""
+lang: "ro"
+
+# Site-wide variables
+whatsapp_number: "40720655334"
+author:
+  name: "Andreea Ghiță"
+  tagline: "Perspectiva celui care recrutează"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

@@ -1,0 +1,46 @@
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/" aria-label="Acasă">
+      <span class="monogram" aria-hidden="true">
+        <img src="{{ '/assets/images/andreea.jpg' | relative_url }}" style="width:100%;height:100%;object-fit:cover;border-radius: 50px;" alt="{{ site.author.name }}">
+      </span>
+      <span>
+        <b>{{ site.author.name }}</b>
+        <span>{{ site.author.tagline }}</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Navigare principală">
+      {% for link in site.data.nav %}
+      <a class="lnk" href="{{ link.href }}">{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="/#preturi"><span class="btn-text">Aplică pentru un loc</span></a>
+      <button class="menu-btn" id="menuOpen" aria-label="Deschide meniul" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="overlay" data-close></div>
+  <div class="mobile-panel">
+    <div class="close-row">
+      <button class="close-btn" id="menuClose" aria-label="Închide meniul">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+    {% for link in site.data.nav %}
+    <a class="m-lnk" href="{{ link.href }}" data-close>{{ link.label }}</a>
+    {% endfor %}
+    <div class="m-cta">
+      <a class="btn btn-primary" href="/#preturi" data-close>Aplică pentru un loc</a>
+    </div>
+  </div>
+</div>

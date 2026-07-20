@@ -1,0 +1,19 @@
+<!-- PROBLEMS -->
+<section class="section" id="dificultati">
+  <div class="wrap">
+    <div class="shead">
+      <p class="kicker">Realitatea dură a pieței muncii</p>
+      <h2>Ești un profesionist valoros, dar ești invizibil.</h2>
+      <p class="lead">Nu e vina ta. Nimeni nu te-a învățat ce caută, de fapt, omul din scaunul de recrutare.</p>
+      <br />
+      <p class="lead">Eu te învăț, pentru că eu sunt acel om.</p>
+    </div>
+    <div class="prob-grid">
+      {% for prob in site.data.problems %}
+      <div class="prob"><span class="x">✕</span>
+        <p>{{ prob.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
